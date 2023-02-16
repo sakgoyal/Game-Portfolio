@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My P5.js Projects</title>
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      iframe {
+        width: 800px;
+        height: 500px;
+        border: none;
+      }
+	  .game-container {
+        position: relative;
+        padding-bottom: 100%; /* Set to 100% of the width to create a square aspect ratio */
+        animation: fade-in 1s ease-out;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      .game-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+	  @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+	  <div>
+        <div class="game-container">
+          <div class="game-content">
+		  <h2>Logo Animation</h2>
+            <iframe src="P0/index.html"  loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+	  <div>
+        <div class="game-container">
+          <div class="game-content">
+		  <h2>Invader Pong</h2>
+            <iframe src="P1/index.html" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+	  <div>
+        
+        <div class="game-container">
+          <div class="game-content">
+		  <h2>Simple Tilemap</h2>
+            <iframe src="P2/index.html" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+	  <div>
+        
+        <div class="game-container">
+          <div class="game-content">
+		  <h2>AI NPC Behavior</h2>
+            <iframe src="P3/index.html" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+	  <div>
+        
+        <div class="game-container">
+          <div class="game-content">
+		  <h2>Hopper</h2>
+            <iframe src="P4/index.html" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+	  <!-- <div> -->
+        
+        <!-- <div class="game-container"> -->
+          <!-- <div class="game-content"> -->
+		  <!-- <h2>NPC Hopper</h2> -->
+            <!-- <iframe src="P5/index.html" loading="lazy"></iframe> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+	  <div>
+        
+        <div class="game-container">
+          <div class="game-content">
+		  <h2>Tropical Aquarium</h2>
+            <iframe src="P8/index.html" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+	  <!-- <div> -->
+        
+        <!-- <div class="game-container"> -->
+          <!-- <div class="game-content"> -->
+		  <!-- <h2>AI Pacman (WIP)</h2> -->
+            <!-- <iframe src="P9/index.html" loading="lazy"></iframe> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+	  <div>
+        
+        <div class="game-container">
+          <div class="game-content">
+		  <h2>Tank Destroyer Final Project</h2>
+            <iframe src="P12/index.html" width="800" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+  </body>
+</html>
