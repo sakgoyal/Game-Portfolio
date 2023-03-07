@@ -330,8 +330,21 @@ function setup() {
 	}
 	pop();
   }
-  function showGameOver() {}
-  function showGameWin() {}
+  function showGameOver() {
+	push();
+	translate(width / 2, height / 2);
+	rectMode(CENTER);
+	fill(0, 0, 0, 220);
+	rect(0, 0, 400, 300, 10);
+	textAlign(CENTER);
+	fill(255);
+	textSize(40);
+	text("Game Over", 0, -90);
+	textSize(10);
+	pop();
+
+  }
+ function showGameWin() {}
   function mouseClicked() {
 	if (!start) {
 	  // when the game has begun
